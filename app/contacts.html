@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Фонд жизни</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-icon"><img src="img/logo-img.svg" alt=""></span>
+      <span class="logo-text">
+        <img src="img/logo-text.svg" alt="">
+      <span
+          class="logo-text-description">Фонд помощи детям с онкологическими  и онкогематологическими заболеваниями</span>
+      </span>
+    </a>
+
+    <ul class="menu">
+      <li><a href="about.html">О программе</a></li>
+      <li><a href="patients.html">Пациентам</a></li>
+      <li><a href="doctors.html">Врачам</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <a href="#" class="logo-company">
+      <img src="img/logo-company-black.svg" alt=""></a>
+
+
+  </div>
+</header>
+
+<div class="page-contacts page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная страница</a></li>
+    </ul>
+
+    <h1>Контактная информация</h1>
+
+    <div class="wrapper">
+
+      <div class="contacts-box">
+        <a href="tel:+74955067970" class="contacts-links">+7 495 506-79-70</a>
+        <a href="mailto:info@deti-life.ru" class="contacts-links">info@deti-life.ru</a>
+      </div>
+      <div class="address">127106, Москва, Алтуфьевское шоссе, дом. 27, 3 этаж, офис 323</div>
+      <ul class="list-social">
+        <li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="callback-section">
+  <div class="container">
+    <div class="callback">
+      <h3>Если вам нужна помощь в рамках программы «Изучить болезнь и вылечить», свяжитесь с нами</h3>
+      <form method="post" class="form">
+        <label>
+          <span class="input-text">ФИО</span>
+          <input type="text" placeholder="Константин Константинопольский" name="name">
+        </label>
+        <label>
+          <span class="input-text">Мобильный телефон</span>
+          <input type="text" placeholder="+79161234567" name="phone" required>
+        </label>
+        <label>
+          <span class="input-text">Электронная почта</span>
+          <input type="text" placeholder="konst.konstantinopolsky@gmail.com" required name="mail">
+        </label>
+        <label>
+          <span class="input-text">Сопроводительный текст</span>
+          <textarea name="message" placeholder="Текст сообщения"></textarea>
+        </label>
+
+        <button class="btn btn-accent" type="submit">Подать заявку</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-icon"><img src="img/logo-img.svg" alt=""></span>
+      <span class="logo-text">
+        <img src="img/logo-text.svg" alt="">
+      </span>
+      <span
+          class="logo-text-description">Фонд помощи детям с онкологическими  и онкогематологическими заболеваниями</span>
+    </a>
+
+    <a href="#" class="logo-company"><img src="img/logo-company.svg" alt=""></a>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+<script src="js/map.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
