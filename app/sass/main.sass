@@ -206,6 +206,7 @@ h1
   font-size: 75px
   font-weight: 800
   width: 100%
+  line-height: 100%
 
 h2
   margin: 0 0 34px
@@ -259,6 +260,12 @@ h2
   justify-content: space-between
   flex-wrap: wrap
 
+.bg-green
+  background: $green
+
+.bg-orange-light
+  background: rgba(#EFE2CA, .5)
+
 
 //header
 header
@@ -282,7 +289,7 @@ header
 //.home
 .home
   padding: 155px 0 90px
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(0, 106, 50, 0.035) 0%, rgba(0, 106, 50, 0.35) 100%), url('../img/bg1.png') no-repeat center
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(0, 106, 50, 0.035) 0%, rgba(0, 106, 50, 0.35) 100%), url('../img/bg1.png') no-repeat center 56%
     size: cover
   background-blend-mode: soft-light, normal, normal
   position: relative
@@ -290,7 +297,7 @@ header
     margin: 0 0 60px
     color: #fff
   .container
-    max-width: 750px
+    max-width: 830px
 
   .btn
     font-size: 13px
@@ -302,8 +309,9 @@ header
   width: 100%
   z-index: 1
   background: transparent
+  padding: 0
   .container
-    max-width: 780px
+    max-width: 830px
     align-items: center
     justify-content: space-between
   .logo
@@ -459,7 +467,11 @@ header
     display: flex
     align-items: center
     justify-content: center
-  h3
+    img
+      width: 100%
+  &__title
+    max-width: 310px
+    width: 100%
     margin: 0 0 19px
     font-size: 23px
     font-weight: 800
@@ -716,12 +728,138 @@ footer
   align-items: center
   flex-wrap: wrap
   width: 100%
+  color: $accent
   li
+    display: flex
+    align-items: center
+    &:after
+      margin: 0 5px
+      content: '→'
+      display: inline-block
+    &:last-child
+      &:after
+        display: none
     a
+
       color: $accent
       text-decoration: underline
 
 
+//contacts-line
+.contacts-line
+  padding: 32px 0
+  color: #fff
+  h2
+    display: none
+  .list-social
+    width: fit-content
+    margin: 0 0 0 auto
+    li
+      a
+        fill: #fff
+  .address
+    font-size: 17px
+    font-weight: bold
+    margin: 0 0 0 100px
+    line-height: 170%
+  .contacts-links
+    font-size: 17px
+    font-weight: bold
+    line-height: 170%
+
+.mail-links
+  text-decoration: underline
+
+.page-information
+  padding: 50px 0 110px
+  h1
+    margin: 0 0 33px
+  .advantages-box
+    max-width: none
+    margin: 0
+    width: 100%
+    padding: 0 0 0 194px
+    h5
+      font-size: 25px
+      margin: 0 0 40px
+    .box-text
+      max-width: none
+      line-height: 160%
+      color: #000
+      p
+        margin: 0 0 20px
+        &:last-child
+          margin: 0
+  .advantages-box__icon
+    max-width: 336px
+    width: 100%
+    top: 20px
+  .btn
+    margin: 30px 0 0
+    font-size: 13px
+    padding: 0 56px
+
+.list-dots
+  list-style: disc
+  padding: 0 0 0 20px
+  margin: 20px 0
+
+//.article-page
+.news-img
+  max-height: 454px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+
+.date-news
+  margin: 40px 0 0
+  font-size: 14px
+  font-weight: bold
+
+//page-news
+.page-news
+  padding: 10px 0 30px
+  .news-box
+    margin: 0 0 65px
+
+.tabs__caption
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 50px
+  letter-spacing: 0.05em
+  font-size: 12px
+  font-weight: 800
+  text-transform: uppercase
+
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 14px 0
+    border: 1.4px solid rgba(0, 0, 0, 0.35)
+      radius: 5px
+    height: 35px
+    padding: 0 30px
+    cursor: pointer
+    transition: .3s ease
+    &:hover
+      color: #fff
+      background: $accent
+    &:last-child
+      margin-right: 0
+  .active
+    background: $accent
+    border-color: $accent
+    color: #fff
+
+.tabs__content
+  display: none
+
+.tabs__content.active
+  display: block
 
 
 @import "media"

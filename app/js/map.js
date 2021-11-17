@@ -28,15 +28,15 @@ function init () {
     myMap.geoObjects.add(myPlacemark);
 
     //Элементы управления
-    myMap.controls
-    // Кнопка изменения масштаба
-        .add('zoomControl')
-        // Список типов карты
-        .add('typeSelector')
-        // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', { right: 5, top: 75 })
-        // Стандартный набор кнопок
-        .add('mapTools')
-        //Линейка масштаба
-        .add(new ymaps.control.ScaleLine());
+    // myMap.controls
+    // // Кнопка изменения масштаба
+    // //     .add('zoomControl')
+    //     // Список типов карты
+    //     // .add('typeSelector')
+    //     // Кнопка изменения масштаба - справа
+    //     // .add('smallZoomControl', { right: 5, top: 75 })
+    //     // Стандартный набор кнопок
+    //     // .add('mapTools')
+    //     //Линейка масштаба
+    //     .add(new ymaps.control.ScaleLine());
 }

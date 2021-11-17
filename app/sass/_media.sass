@@ -71,6 +71,9 @@
   .menu
     font-size: 12px
 
+  .page-news .news-box
+    margin: 0 0 30px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px)
   .menu
@@ -83,6 +86,9 @@
   header
     .logo
       margin: 0 auto 0 0
+
+  .tabs__caption
+    margin: 0
 
 @media only screen and (max-width: 768px)
   .home-content__text
@@ -106,7 +112,7 @@
     &__icon
       max-width: 32px
 
-    h3
+    &__title
       font-size: 19px
       margin: 0 0 16px
 
@@ -138,10 +144,6 @@
 
   .news-box
     max-width: 48%
-    display: none
-
-    &:nth-child(-n+2)
-      display: block
 
     &__body
       padding: 16px 0 0
@@ -149,6 +151,12 @@
     &__title
       margin: 0 0 10px
       line-height: 25px
+
+  .news
+    .news-box
+      display: none
+      &:nth-child(-n+2)
+        display: block
 
   .map
     position: relative
@@ -186,6 +194,25 @@
       max-width: none
     .list-social
       margin: 0
+
+  .contacts-line
+    padding: 34px 0 37px
+    h2
+      display: block
+      margin: 0 0 30px
+      font-size: 23px
+    .list-social
+      width: 100%
+      margin: 43px 0 0
+
+  .page-information .advantages-box
+    padding: 0 0 0 150px
+
+  .page-information .advantages-box__icon
+    max-width: 300px
+
+  .news-img
+    max-height: 340px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -377,6 +404,50 @@
       .logo-text
         max-width: 52px
 
+  .contacts-line
+    .address
+      margin: 0
+
+  .contacts-line__box
+    width: 100%
+
+  .page-information
+    padding: 10px 0 60px
+    .advantages-box
+      padding: 0
+      //padding: 0 0 0 130px
+      .btn
+        padding: 0 20px
+      h5
+        font-size: 18px
+        margin: 0 0 20px
+      .box-text
+        font-size: 16px
+        line-height: 140%
+        p
+          margin: 0 0 15px
+    .advantages-box__icon
+      //max-width: 200px
+      display: none
+
+  .page
+    h1
+      font-size: 23px
+      margin: 0 0 19px
+
+  .date-news
+    margin: 10px 0 0
+
+  .news-img
+    max-height: 200px
+    margin: 0 0 15px
+
+  .breadcrumb
+    display: none
+
+  .news h2
+    margin: 0 0 29px
+
 @media only screen and (max-width: 480px)
   .video-collection-box
     width: 100%
@@ -390,6 +461,11 @@
     .wrapper
       margin: 20px 0 0
 
+  .page-information
+    .advantages-box
+      padding: 0 0 0 70px
+    .advantages-box__icon
+      max-width: 100px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
