@@ -401,7 +401,6 @@ header {
     .menu li:last-child {
       margin-right: 0; }
     .menu li a {
-      letter-spacing: 0.1em;
       text-decoration: underline;
       color: #312A20; }
       .menu li a:hover {
@@ -525,7 +524,8 @@ header {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    opacity: .5; }
     .advantages-box__icon img {
       width: 100%; }
   .advantages-box__title {
@@ -874,7 +874,8 @@ footer {
 .page-information {
   padding: 50px 0 110px; }
   .page-information h1 {
-    margin: 0 0 33px; }
+    margin: 0 0 33px;
+    max-width: 750px; }
   .page-information .advantages-box {
     max-width: none;
     margin: 0;
@@ -894,7 +895,8 @@ footer {
   .page-information .advantages-box__icon {
     max-width: 336px;
     width: 100%;
-    top: 20px; }
+    top: 20px;
+    opacity: .25; }
   .page-information .btn {
     margin: 30px 0 0;
     font-size: 13px;
@@ -904,6 +906,14 @@ footer {
   list-style: disc;
   padding: 0 0 0 20px;
   margin: 20px 0; }
+  .list-dots li::marker {
+    font-size: 18px; }
+
+.page-information2 h1 {
+  max-width: 600px; }
+
+.page-information2 .advantages-box__icon {
+  max-width: 265px; }
 
 .news-img {
   max-height: 454px;
@@ -971,11 +981,18 @@ footer {
     border-color: #FB5A00;
     color: #fff; }
 
+.tabs {
+  width: 100%; }
+
 .tabs__content {
+  width: 100%;
   display: none; }
 
 .tabs__content.active {
   display: block; }
+
+.article-page h1 {
+  max-width: 780px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1177,6 +1194,7 @@ footer {
     position: relative;
     background: #fff;
     top: 0;
+    padding: 22px 0 15px;
     border: none; }
     .header-home .logo-icon {
       max-width: 23px;

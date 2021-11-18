@@ -355,7 +355,7 @@ header
     &:last-child
       margin-right: 0
     a
-      letter-spacing: 0.1em
+      //letter-spacing: 0.1em
       text-decoration: underline
       color: #312A20
       &:hover
@@ -467,6 +467,7 @@ header
     display: flex
     align-items: center
     justify-content: center
+    opacity: .5
     img
       width: 100%
   &__title
@@ -774,6 +775,7 @@ footer
   padding: 50px 0 110px
   h1
     margin: 0 0 33px
+    max-width: 750px
   .advantages-box
     max-width: none
     margin: 0
@@ -794,6 +796,7 @@ footer
     max-width: 336px
     width: 100%
     top: 20px
+    opacity: .25
   .btn
     margin: 30px 0 0
     font-size: 13px
@@ -803,6 +806,17 @@ footer
   list-style: disc
   padding: 0 0 0 20px
   margin: 20px 0
+  li
+    &::marker
+      font-size: 18px
+
+
+
+.page-information2
+  h1
+    max-width: 600px
+  .advantages-box__icon
+    max-width: 265px
 
 //.article-page
 .news-img
@@ -855,11 +869,19 @@ footer
     border-color: $accent
     color: #fff
 
+.tabs
+  width: 100%
+
 .tabs__content
+  width: 100%
   display: none
 
 .tabs__content.active
   display: block
+
+.article-page
+  h1
+    max-width: 780px
 
 
 @import "media"
